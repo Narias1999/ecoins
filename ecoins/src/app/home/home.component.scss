@@ -1,0 +1,78 @@
+$green: #27EF9E;
+$blue: #009EFD;
+
+.btn {
+    padding: 20px;
+    background: $green;
+    padding: 6px 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 80px;
+}
+.btn.blue {
+    background: $blue;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./../../assets/triangulo.png');
+    background-position: 130% 15%;
+    background-repeat: no-repeat;
+    main {
+        padding: 0 30px;
+    }
+    header {
+        margin-bottom: 30px;
+        .btn {
+            text-align: left;
+            width: 120px;
+            padding: 0 30px !important;
+            line-height: 16px;
+        }
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+        img {
+            width: 150px
+        }
+    }
+    h4 {
+        font-size: 40px;
+        color: $green;
+        margin-bottom: 40px;
+    }
+    .subtitle {
+        p {
+            font-size: 26px;
+            color: #888;
+        }
+    }
+
+    .buttons.horizontal {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        margin-bottom: 40px;
+    }
+
+    .buttons.vertical {
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px;
+        .btn {
+            margin-bottom: 12px;
+            padding: 15px;
+        }
+    }
+
+    .tabs {
+        position: fixed;
+        bottom: 0;
+        padding: 10px 20px;
+        left: 0;
+        width: 100%;
+        background: #27EF9E;
+        height: 70px;
+    }
+}
