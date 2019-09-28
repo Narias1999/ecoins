@@ -7,11 +7,11 @@
             <input class="input" type="text" placeholder="Usuario">
             <input class="input" type="text" placeholder="Contraseña">
             <div class="radio">
-                <input type="radio" name="">
+                <input type="checkbox" value="accept"
+                (change)="conditionsEvent()">
                 Acepto términos y condiciones
             </div>
         </div>
     </div>
-    <button class="btn">Iniciar sesión</button>
-    <p>&#174; eCoins V1</p>
+    <button class="btn" (click)="doLogin()">Iniciar sesión</button>
 </div>
