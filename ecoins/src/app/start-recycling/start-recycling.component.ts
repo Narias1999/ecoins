@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartRecyclingComponent implements OnInit {
 
-  constructor() { }
+  showDrawer:Boolean
+
+  constructor() {
+    this.showDrawer = false
+  }
 
   ngOnInit() {
   }
