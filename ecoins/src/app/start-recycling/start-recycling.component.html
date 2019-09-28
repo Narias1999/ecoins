@@ -1,0 +1,69 @@
+<div class="container">
+    <header>
+        <img src="./../../assets/logo_color-02.png" alt="">
+        <button class="btn green" (click)="showDrawer = true">Cómo <br> empezar?</button>
+    </header>
+    <main>
+        <h2 class="title green">Listo!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="form">
+            <select class="input">
+                <option>Selecciona un tipo de residuo</option>
+                <option>Vidrio</option>
+                <option>Papel</option>
+                <option>Carton</option>
+            </select>
+            <input class="input" type="number" placeholder="Cantidad de residuo (gr)">
+            <button class="btn file">
+                Seleciona una foto
+                <i class="fas fa-camera"></i>
+            </button>
+            <input class="hidden" type="file" placeholder="Cantidad de residuo (gr)">
+            <span class="points">Total: 20 points</span>
+        </div>
+        <div class="buttons vertical">
+            <button [routerLink]="['/start-recycling']" class="btn green">Quiero que recojan mi residuos</button>
+            <button class="btn blue">Quiero ir a un ecopunto</button>
+        </div>
+
+        <div class="tabs">
+            <a class="tab-item">
+                <i class="fas fa-address-book fa-lg"></i>
+                <span>Contacto</span>
+            </a>
+            <a class="tab-item">
+                <i class="fas fa-history fa-lg"></i>
+                <span>Historial</span>
+            </a>
+            <a class="tab-item">
+                <i class="fas fa-star fa-lg"></i>
+                <span>Premios</span>
+            </a>
+            <a class="tab-item active" [routerLink]="['/home']">
+                <i class="fas fa-home fa-lg"></i>
+                <span>Home</span>
+            </a>
+        </div>
+    </main>
+</div>
+<div [ngClass]="{ 'open': showDrawer }" class="drawer">
+        <div class="header">
+            <button (click)="showDrawer = false">Ya entendí!</button>
+        </div>
+    
+        <h2>¿Como reciclo?</h2>
+        <h4>Aprende a separar los residuos y gana eCoins. ¡Es muy fácil!</h4>
+        <div class="content">
+            <h5>a. Orgánicos</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur Bolsa Negra</p>
+            <h5>b. Inorgánicos</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur Bolsa Blanca</p>
+        </div>
+        <h4>Empieza a reciclar con eCoin</h4>
+        <h5>1. Llena el formulario</h5>
+        <h5>2. Toma la foto</h5>
+        <h5>3. Crea y redime la notificación</h5>
+        <h4>Redime tus eCoins</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+    <div (click)="showDrawer = false" [ngClass]="{ 'open': showDrawer }" class="overlay"></div>

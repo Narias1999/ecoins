@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { ModelService } from './model.service';
 import { HttpClientModule } from '@angular/common/http';
 
+import { StartRecyclingComponent } from './start-recycling/start-recycling.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegisterCiuComponent,
     IniciarComponent,
-    HomeComponent
+    HomeComponent,
+    StartRecyclingComponent
   ],
   imports: [
     NgbModule,

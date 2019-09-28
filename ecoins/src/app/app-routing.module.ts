@@ -4,12 +4,14 @@ import { LoginComponent } from './login/login.component'
 import { RegisterCiuComponent } from './register-ciu/register-ciu.component'
 import { IniciarComponent } from './iniciar/iniciar.component'
 import { HomeComponent } from './home/home.component'
+import { StartRecyclingComponent } from './start-recycling/start-recycling.component'
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterCiuComponent },
-  { path: '', component: IniciarComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'start-recycling', component: StartRecyclingComponent },
+  { path: '', component: IniciarComponent },
 ];
 
 @NgModule({
