@@ -10,12 +10,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './login/login.component';
 import { RegisterCiuComponent } from './register-ciu/register-ciu.component';
+import { IniciarComponent } from './iniciar/iniciar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterCiuComponent
+    RegisterCiuComponent,
+    IniciarComponent
   ],
   imports: [
     NgbModule,
