@@ -1,0 +1,55 @@
+<div class="container">
+    <header>
+        <img src="./../../assets/logo_color-02.png" alt="">
+        <button class="btn green" (click)="showDrawer = true">Cómo <br> empezar</button>
+    </header>
+    <main>
+        <h2>
+            Listas de premios
+        </h2>
+<br>
+
+        <div class="subtitle">
+                <p>Bolsa de Tela tecnol&oacute;gica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>50 eCoins</strong></p>
+            </div>
+        
+        <div class="subtitle">
+            <p>Recarga de pasajes  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>100 eCoins</strong></p>
+        </div>
+
+        <div class="subtitle">
+            <p>Bolso de Jean Ecol&oacute;gico  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>200 eCoins</strong></p>
+        </div>
+
+        <div class="subtitle">
+                <p>Boleta de cine 2D   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>350 eCoins</strong></p>
+        </div>
+
+        <div class="subtitle">
+                <p>Bolsa de Tela tecnológica   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>50 eCoins</strong></p>
+        </div>
+
+
+      
+
+        <div class="tabs">
+            <a class="tab-item">
+                <i class="fas fa-address-book fa-lg"></i>
+                <span>Contacto</span>
+            </a>
+            <a class="tab-item">
+                <i class="fas fa-history fa-lg"></i>
+                <span>Historial</span>
+            </a>
+            <a class="tab-item active">
+                <i class="fas fa-star fa-lg"></i>
+                <span>Premios</span>
+            </a>
+            <a class="tab-item btn" [routerLink]="['/home']">
+                <i class="fas fa-home fa-lg"></i>
+                <span>Home</span>
+            </a>
+        </div>
+    </main>
+</div>
+

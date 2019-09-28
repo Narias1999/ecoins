@@ -13,6 +13,7 @@ import { RegisterCiuComponent } from './register-ciu/register-ciu.component';
 import { IniciarComponent } from './iniciar/iniciar.component';
 import { HomeComponent } from './home/home.component';
 import { StartRecyclingComponent } from './start-recycling/start-recycling.component';
+import { PremiosComponent } from './premios/premios.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { StartRecyclingComponent } from './start-recycling/start-recycling.compo
     RegisterCiuComponent,
     IniciarComponent,
     HomeComponent,
-    StartRecyclingComponent
+    StartRecyclingComponent,
+    PremiosComponent
   ],
   imports: [
     NgbModule,
