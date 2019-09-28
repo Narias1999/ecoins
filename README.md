@@ -12,7 +12,6 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'ecoins';
   db:AngularFireDatabase;
-  items: Observable<any[]>;
 
   constructor(db: AngularFireDatabase) {
     this.db = db
@@ -20,11 +19,16 @@ export class AppComponent {
 
   send() {
     const ref = this.db.list('/')
+    // push an collection
     ref.push({
       x: 123
     })
 
+    // retrieve data in realtime
     ref.valueChanges().subscribe(console.log)
+
+    //set a value(update)
+    his.db.list('/').set('key-to-update', 'new data')
   }
 }
 ```
