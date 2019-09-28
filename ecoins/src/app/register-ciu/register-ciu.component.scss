@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 10px 30px;
+    padding-bottom: 90px;
+    background: linear-gradient(#2AF598, #009EFD);
+    color: #fff;
+
+    img {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+    .input {
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+        height: 41px;
+        font-family: 16px;
+        border-radius: 50px;
+        border: 0;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 6px #70707082;
+    }
+    .radio {
+        font-size: 11px;
+        text-align: left;
+    }
+    .btn {
+        width: 100%;
+        padding: 10px 20px;
+        height: 41px;
+        background: #2AF598;
+        color: #fff;
+        border-radius: 50px;
+        border: 0;
+        font-weight: bold;
+        box-shadow: 0 3px 6px #70707082;
+    }
+
+
+}
