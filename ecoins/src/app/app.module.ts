@@ -9,11 +9,13 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './login/login.component';
+import { RegisterCiuComponent } from './register-ciu/register-ciu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterCiuComponent
   ],
   imports: [
     NgbModule,
