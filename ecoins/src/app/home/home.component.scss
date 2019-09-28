@@ -13,6 +13,61 @@ $blue: #009EFD;
 .btn.blue {
     background: $blue;
 }
+
+.drawer {
+    background: $green;
+    width: 250px;
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    z-index: 10;
+    top: 0;
+    transition: .4s;
+    color: #fff;
+    box-shadow: -3px 0px 9px #1d2124c7;
+    padding: 15px;
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    h2 {
+        font-weight: bolder;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    h4 {
+        font-weight: bolder;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 14px;
+    }
+    .content {
+        padding: 0 10px;
+    }
+}
+.drawer.open {
+    right: 0;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: .3s;
+    z-index: -20;
+}
+.overlay.open {
+    background: rgba(0, 0, 0, .3);
+    z-index: 0;
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -23,7 +78,7 @@ $blue: #009EFD;
         padding: 0 30px;
     }
     header {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         .btn {
             text-align: left;
             width: 120px;
@@ -32,19 +87,19 @@ $blue: #009EFD;
         }
         display: flex;
         justify-content: space-between;
-        padding: 18px;
+        padding: 18px 12px;
         img {
             width: 150px
         }
     }
     h4 {
-        font-size: 40px;
+        font-size: 30px;
         color: $green;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     .subtitle {
         p {
-            font-size: 26px;
+            font-size: 20px;
             color: #888;
         }
     }
@@ -52,14 +107,18 @@ $blue: #009EFD;
     .buttons.horizontal {
         display: flex;
         justify-content: space-between;
-        margin: 15px 0;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        color: $green;
+        text-align: center;
+        span {
+            font-size: 13px;
+        }
     }
 
     .buttons.vertical {
         display: flex;
         flex-direction: column;
-        padding: 0 40px;
+        padding: 0 20px;
         .btn {
             margin-bottom: 12px;
             padding: 15px;
@@ -69,10 +128,23 @@ $blue: #009EFD;
     .tabs {
         position: fixed;
         bottom: 0;
-        padding: 10px 20px;
+        padding: 0 20px;
         left: 0;
         width: 100%;
         background: #27EF9E;
         height: 70px;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        a {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+        }
+        a.active {
+            background: rgba(0, 0, 0, .3);
+        }
     }
 }
