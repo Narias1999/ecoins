@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterCiuComponent } from './register-ciu/register-ciu.component';
 import { IniciarComponent } from './iniciar/iniciar.component';
 import { HomeComponent } from './home/home.component';
+import { StartRecyclingComponent } from './start-recycling/start-recycling.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     RegisterCiuComponent,
     IniciarComponent,
-    HomeComponent
+    HomeComponent,
+    StartRecyclingComponent
   ],
   imports: [
     NgbModule,
