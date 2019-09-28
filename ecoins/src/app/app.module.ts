@@ -12,6 +12,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterCiuComponent } from './register-ciu/register-ciu.component';
 import { IniciarComponent } from './iniciar/iniciar.component';
 import { HomeComponent } from './home/home.component';
+import { ModelService } from './model.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -25,10 +28,11 @@ import { HomeComponent } from './home/home.component';
     NgbModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule, // for database
   ],
-  providers: [],
+  providers: [ModelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

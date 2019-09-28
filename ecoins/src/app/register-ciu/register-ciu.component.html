@@ -3,18 +3,24 @@
     <h1>Registrate</h1>
         <p class="slogan">¡Con Ecoins siempre ganas!</p>
         <div class="form">
-            <select class="input">
-                <option>Colector</option>
-                <option>Productor</option>
-            </select>               
+            <select class="input" (change)="changeUser($event.target.value)">
+                <option value="">Escoja tipo de usuario</option>
+                <option *ngFor="let type of userType">{{type.name}}</option>
+            </select>
+            <select class="input" *ngIf="typePro">
+                <option *ngFor="let typ of items">{{typ}}</option>
+            </select>
+            <select class="input" *ngIf="!typePro">
+                    <option *ngFor="let typ of items">{{typ}}</option>
+            </select>
             <input class="input" type="text" placeholder="Nombre:">
             <input class="input" type="text" placeholder="Apellido:">
             <input class="input" type="text" placeholder="Telefono">
             <input class="input" type="text" placeholder="Email">
             <div class="radio">
-                    <input type="radio" name="">
+                    <input type="radio" name="" (change)="conditionsEvent()">
                     Acepto términos y condiciones
             </div>
         </div>
-        <button class="btn">Registrarme</button>
+        <button class="btn" (click)="atHome()">Registrarme</button>
 </div>
