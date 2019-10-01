@@ -8,4 +8,4 @@ eCoins borned with the social purpose of transform, optimize and teach about rec
 
 To develop the idea we used the tech stack Firebase, Angular and React Native.
 
-In the hackathon's final result we reach the 5th place. The event join more than 300 colombian developers.
+In the hackathlon's final result we reach the 5th place. The event join more than 300 colombian developers.
