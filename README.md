@@ -4,7 +4,7 @@ eCoins is a project created in a hackathon organized by Belatrix Software. [Hack
 
 In the hackatrix we (A 6 people team called team 404) had to solve a social problem with tech. So we created eCoins.
 
-eCoins borned with the social purpose of transform, optimize and teach about recycling in Colombia. We get it connecting people with recyclers to make way more efficient the recycling in Bogota. At the same time as winning a lot of eCoins which you can change for a lot of ecoprizes.
+eCoins borned with the social purpose of transform, optimize and teach about recycling in Colombia. We get it connecting people with recyclers to make a more efficient recycling in Bogota. At the same time as winning a lot of eCoins which you can change it for a lot of ecoprizes in the app market.
 
 To develop the idea we used the tech stack Firebase, Angular and React Native.
 
