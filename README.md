@@ -1,34 +1,11 @@
-- Firebase example
-```js
-import { Component } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/database';
-import { Observable } from 'rxjs';
+# eCoins  
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  title = 'ecoins';
-  db:AngularFireDatabase;
+eCoins is a project created in a hackathon organized by Belatrix Software. [Hackatrix 2019](https://cdn2.hubspot.net/hubfs/5078049/Hackatrix/Bases_y_condiciones_Hackatrix_Bogota_2019.pdf).  
 
-  constructor(db: AngularFireDatabase) {
-    this.db = db
-  }
+In the hackatrix we (A 6 people team called team 404) had to solve a social problem with tech. So we created eCoins.
 
-  send() {
-    const ref = this.db.list('/')
-    // push an collection
-    ref.push({
-      x: 123
-    })
+eCoins borned with the social purpose of transform, optimize and teach about recycling in Colombia. We get it connecting people with recyclers to make way more efficient the recycling in Bogota. At the same time as winning a lot of eCoins which you can change for a lot of ecoprizes.
 
-    // retrieve data in realtime
-    ref.valueChanges().subscribe(console.log)
+To develop the idea we used the tech stack Firebase, Angular and React Native.
 
-    //set a value(update)
-    his.db.list('/').set('key-to-update', 'new data')
-  }
-}
-```
+In the hackathon's final result we reach the 5th place. The event join more than 300 colombian developers.
