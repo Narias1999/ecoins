@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
     this.router = router
     this.conditions = false
   }
-  conditionsEvent($event) {
+  conditionsEvent() {
     this.conditions = !this.conditions
   }
   doLogin() {

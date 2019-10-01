@@ -1,11 +1,11 @@
 <div class="container">
-    <img src="./../../assets/logo.png" alt="">
+    <img src="./../../assets/logo.png" [routerLink]="['/']" alt="">
     <p class="slogan">¡Con Ecoins siempre ganas!</p>
     <div class="form">
         <h2>Iniciar sesión</h2>
         <div>
             <input class="input" type="text" placeholder="Usuario">
-            <input class="input" type="text" placeholder="Contraseña">
+            <input class="input" type="password" placeholder="Contraseña">
             <div class="radio">
                 <input type="checkbox" value="accept"
                 (change)="conditionsEvent()">

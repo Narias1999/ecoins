@@ -24,7 +24,7 @@ export class RegisterCiuComponent implements OnInit {
 
   ngOnInit() {
   }
-  conditionsEvent($event) {
+  conditionsEvent() {
     this.conditions = !this.conditions
   }
 
