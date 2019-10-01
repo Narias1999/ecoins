@@ -16,6 +16,7 @@ import { ModelService } from './model.service';
 import { HttpClientModule } from '@angular/common/http';
 
 import { StartRecyclingComponent } from './start-recycling/start-recycling.component';
+import { PremiosComponent } from './premios/premios.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { StartRecyclingComponent } from './start-recycling/start-recycling.compo
     RegisterCiuComponent,
     IniciarComponent,
     HomeComponent,
-    StartRecyclingComponent
+    StartRecyclingComponent,
+    PremiosComponent
   ],
   imports: [
     NgbModule,
